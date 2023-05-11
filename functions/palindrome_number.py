@@ -1,10 +1,10 @@
-def palindrome_number(x):
-    temp = x
+def palindrome_number(num):
+    temp = num
     reverse = 0
-    while(x>0):
-        dig = x%10
+    while(num>0):
+        dig = num%10
         reverse = reverse*10 + dig
-        x = x//10
+        num = num//10
 
     if temp == reverse:
         return True
